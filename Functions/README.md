@@ -9,6 +9,7 @@ This function takes for input an interaction list formatted as a dataframe with 
 	- `freq_norm`, the normalised frequency of the interaction;
 	- `freq`, the raw frequency of the interaction (estimated with the number of individuals caught for instance).
 and a species list formatted as a dataframe with at least a column with species name (`taxon`).
+
 mw_adjacencies() also requires three logical variables: `w` to specify whether the metaweb is quantitative or qualitative, `d`, to specify whether the metaweb is directed or not, and `n` to specify whether normalised interaction frequencies should be used.
 
 * `network_role.R` contains multiple functions:
@@ -27,4 +28,5 @@ mw_adjacencies() also requires three logical variables: `w` to specify whether t
 
 * `dietBrayCurtis.R` returns the Bray-Curtis dissimilarity between two quantitative diets (vectors).
 * `jaccardDistDiet.R` returns the Jaccard distance between two specific diets (vectors).
+
 But see function `vegdist` from the R package `vegan` for pairwise comparisons at the scale of a community.
